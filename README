@@ -1,0 +1,48 @@
+# Task Management System - Docker Setup
+
+This project contains a frontend (React) and backend (Node/Express) for a Task Management System.  
+The goal is to run both services in Docker containers.
+
+---
+
+## Prerequisites
+
+- Install Docker on your system
+- Optional: Install Node.js if you want to run locally
+
+---
+
+## Frontend (TasksManagementFrontend)
+
+### Build and Run with Docker
+
+1. Navigate to the frontend folder:
+```bash
+cd TasksManagementFrontend
+
+2. Build the Docker image:
+```bash
+docker build -t tasks-frontend .
+
+3. Run the container (map to host port 5000):
+```bash
+docker run -p 5000:5000 tasks-frontend
+
+4. Open your browser
+
+## Backend (TasksManagementBackend)
+
+### Build and Run with Docker
+
+1. Navigate to the backend folder:
+```bash
+cd TasksManagementBackend
+
+2. Build the Docker image:
+docker build -t tasks-backend .
+
+3. Run the container (map to host port 8080):
+```bash
+docker run -p 8080:8080 tasks-backend
+
+4. Test the backend
