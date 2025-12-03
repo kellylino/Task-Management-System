@@ -29,7 +29,7 @@ jobs:
           push: true
           tags: kellylino/tasks-frontend:latest
 
-      # 4. Deploy the frontend to Render
+      # 4. Deploy the frontend
       - name: Deploy frontend to Render
         uses: qbaware/render-redeploy-action@v1
         with:
