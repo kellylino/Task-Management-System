@@ -1,5 +1,4 @@
-- link to the deployed application:
-- https://tasks-frontend-docker.onrender.com
+- link to the deployed application: https://tasks-frontend-docker.onrender.com
 
 
 
