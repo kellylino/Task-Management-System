@@ -34,7 +34,7 @@ jobs:
           tags: kellylino/tasks-frontend:latest
 
       - name: Deploy to Render
-        uses: render-examples/docker-deploy-action@v1
+        uses: render-actions/deploy@v1
         with:
           service-id: ${{ secrets.RENDER_SERVICE_ID }}
           api-key: ${{ secrets.RENDER_API_KEY }}
