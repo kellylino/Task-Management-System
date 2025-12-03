@@ -32,7 +32,6 @@ jobs:
       # 4. Deploy the frontend
       - name: Deploy frontend to Render
         uses: qbaware/render-redeploy-action@v0
-        with:
-          api_key: ${{ secrets.RENDER_API_KEY }}
-          service_id: ${{ secrets.RENDER_SERVICE_ID_FRONTEND }}
-          image: docker.io/kellylino/tasks-frontend:latest
+        env:
+          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+          RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID_FRONTEND }}
