@@ -31,7 +31,7 @@ jobs:
 
       # 4. Deploy the frontend
       - name: Deploy frontend to Render
-        uses: qbaware/render-redeploy-action@v1
+        uses: qbaware/render-redeploy-action@v0
         with:
           api_key: ${{ secrets.RENDER_API_KEY }}
           service_id: ${{ secrets.RENDER_SERVICE_ID_FRONTEND }}
